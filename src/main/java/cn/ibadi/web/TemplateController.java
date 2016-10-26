@@ -30,10 +30,29 @@ public class TemplateController {
 		return "user/login";
 	}
 	
-	@RequestMapping("/pages/widgets")
+	@RequestMapping("/widgets")
 	public String widgets() {
 		return "html/widgets";
 	}
 	
+	@RequestMapping("/chartjs")
+	public String chartjs() {
+		return "html/charts/chartjs";
+	}
+	
+	@RequestMapping("/morris")
+	public String morris() {
+		return "html/charts/morris";
+	}
+
+	@RequestMapping("/flot")
+	public String flot() {
+		return "html/charts/flot";
+	}
+	
+	@RequestMapping("/inline")
+	public String inline() {
+		return "html/charts/inline";
+	}
 	
 }
