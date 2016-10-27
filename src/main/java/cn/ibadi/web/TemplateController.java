@@ -85,4 +85,20 @@ public class TemplateController {
 		return "html/ui/modals";
 	}
 	
+	@RequestMapping("/general_element")
+	public String general_element() {
+		return "html/forms/general";
+	}
+	
+	@RequestMapping("/advanced")
+	public String advanced() {
+		return "html/forms/advanced";
+	}
+	
+	@RequestMapping("/editors")
+	public String editors() {
+		return "html/forms/editors";
+	}
+	
+
 }
