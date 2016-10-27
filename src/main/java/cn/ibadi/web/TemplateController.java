@@ -55,4 +55,34 @@ public class TemplateController {
 		return "html/charts/inline";
 	}
 	
+	@RequestMapping("/general")
+	public String general() {
+		return "html/ui/general";
+	}
+	
+	@RequestMapping("/icons")
+	public String icons() {
+		return "html/ui/icons";
+	}
+	
+	@RequestMapping("/buttons")
+	public String buttons() {
+		return "html/ui/buttons";
+	}
+	
+	@RequestMapping("/sliders")
+	public String sliders() {
+		return "html/ui/sliders";
+	}
+	
+	@RequestMapping("/timeline")
+	public String timeline() {
+		return "html/ui/timeline";
+	}
+	
+	@RequestMapping("/modals")
+	public String modals() {
+		return "html/ui/modals";
+	}
+	
 }
