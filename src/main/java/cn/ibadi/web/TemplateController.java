@@ -25,10 +25,10 @@ public class TemplateController {
 		return "public/header";
 	}
 	
-	@RequestMapping("/login")
-	public String login() {
-		return "user/login";
-	}
+//	@RequestMapping("/login")
+//	public String login() {
+//		return "user/login";
+//	}
 	
 	@RequestMapping("/widgets")
 	public String widgets() {
@@ -100,5 +100,82 @@ public class TemplateController {
 		return "html/forms/editors";
 	}
 	
-
+	@RequestMapping("/simple-table")
+	public String simple() {
+		return "html/tables/simple";
+	}
+	
+	@RequestMapping("/data-table")
+	public String data() {
+		return "html/tables/data";
+	}
+	
+	@RequestMapping("/calendar")
+	public String calendar() {
+		return "html/calendar";
+	}
+	
+	//右键
+	@RequestMapping("/mailbox")
+	public String mailbox() {
+		return "html/mailbox/mailbox";
+	}
+	
+	@RequestMapping("/compose")
+	public String compose() {
+		return "html/mailbox/compose";
+	}
+	
+	@RequestMapping("/read-mail")
+	public String readMail() {
+		return "html/mailbox/read-mail";
+	}
+	
+	//案例
+	@RequestMapping("/invoice")
+	public String invoice() {
+		return "html/examples/invoice";
+	}
+	
+	@RequestMapping("/profile")
+	public String profile() {
+		return "html/examples/profile";
+	}
+	
+	@RequestMapping("/login")
+	public String login() {
+		return "html/examples/login";
+	}
+	
+	@RequestMapping("/register")
+	public String register() {
+		return "html/examples/register";
+	}
+	
+	@RequestMapping("/lockscreen")
+	public String lockscreen() {
+		return "html/examples/lockscreen";
+	}
+	
+	@RequestMapping("/404")
+	public String notFound() {
+		return "html/examples/404";
+	}
+	
+	@RequestMapping("/500")
+	public String interError() {
+		return "html/examples/500";
+	}
+	
+	@RequestMapping("/blank")
+	public String blank() {
+		return "html/examples/blank";
+	}
+	
+	@RequestMapping("/pace")
+	public String pace() {
+		return "html/examples/pace";
+	}
+	
+	
 }
