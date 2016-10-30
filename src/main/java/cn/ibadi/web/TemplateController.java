@@ -15,6 +15,11 @@ public class TemplateController {
 		return "index";
 	}
 
+	@RequestMapping("/index2")
+	public String index2() {
+		return "index2";
+	}
+	
 	@RequestMapping("/left")
 	public String left() {
 		return "public/left";
@@ -177,5 +182,25 @@ public class TemplateController {
 		return "html/examples/pace";
 	}
 	
+	//布局
+	@RequestMapping("/top-nav")
+	public String topNav() {
+		return "html/layout/top-nav";
+	}
+	
+	@RequestMapping("/boxed")
+	public String boxed() {
+		return "html/layout/boxed";
+	}
+	
+	@RequestMapping("/fixed")
+	public String fixed() {
+		return "html/layout/fixed";
+	}
+	
+	@RequestMapping("/collapsed-sidebar")
+	public String collapsedSidebar() {
+		return "html/layout/collapsed-sidebar";
+	}
 	
 }
